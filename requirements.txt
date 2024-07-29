@@ -1,0 +1,5 @@
+discord.py
+selenium
+webdriver-manager
+pillow
+python-dotenv
