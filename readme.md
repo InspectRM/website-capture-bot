@@ -21,7 +21,7 @@ A Discord bot that interacts with websites using Selenium and Discord's UI compo
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/InspectRM/website-capture-bot.git](https://github.com/InspectRM/website-capture-bot.git)
+git clone https://github.com/InspectRM/website-capture-bot.git
 cd discord-bot
 ```
 
