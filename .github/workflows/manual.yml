@@ -1,0 +1,23 @@
+name: Auto Commit
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Adjust time (UTC)
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Make a change
+        run: echo "$(date)" >> commit_log.txt
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "InspectRM"
+          git config --global user.email "myftaraga@hotmail.com"
+          git add .
+          git commit -m "Daily updates"
+          git push
